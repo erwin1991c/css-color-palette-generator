@@ -7,17 +7,19 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Color Palette Generator</h1>
-	<input type="color" id="base-color" value="#004cff">
-	<div class="color-preview">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-	<div class="css-code">
-		<pre><code></code></pre>
+	<div class="container">
+		<h1>Color Palette Generator</h1>
+		<input type="color" id="base-color" value="#004cff">
+		<div class="color-preview">
+			<div class="color-box" id="primary"></div>
+			<div class="color-box" id="secondary"></div>
+			<div class="color-box" id="accent"></div>
+			<div class="color-box" id="background"></div>
+			<div class="color-box" id="text"></div>
+		</div>
+		<div class="css-code">
+			<pre><code></code></pre>
+		</div>
 	</div>
 	<script src="script.js"></script>
 </body>
