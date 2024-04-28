@@ -58,13 +58,13 @@ function getTextColor(baseColor) {
 }
 
 function rgbToHsl(rgb) {
-	const [r, g, b] = rgb.substring(4, rgb.length - 1).split(',').map((x) => parseInt(x, 10));
-	const max = Math.max(r, g, b);
-	const min = Math.min(r, g, b);
-	const l = (max + min) / 2;
-	const h = max === min ? 0 : (g - b) * (max - min) / (6 * (1 - Math.abs(2 * l - 1)));
-	const s = max === 0 ? 0 : (max - min) / (1 - Math.abs(2 * l - 1));
-	return { h, s, l };
+const [r, g, b] = rgb.substring(4, rgb.length - 1).split(',').map((x) => parseInt(x, 10) / 255);
+const max = Math.max(r, g, b);
+const min = Math.min(r, g, b);
+const l = (max + min) / 2;
+const h = max === min ? 0 : (g - b) * (max - min) / (6 * (1 - Math.abs(2 * l - 1)));
+const s = max === 0 ? 0 : (max - min) / (1 - Math.abs(2 * l - 1));
+return { h: h / 360, s, l };
 }
 
 function hslToRgb(hsl) {
