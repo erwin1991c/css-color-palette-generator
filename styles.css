@@ -1,5 +1,15 @@
 body {
 	font-family: Arial, sans-serif;
+	background-color: #f7f7f7;
+}
+
+.container {
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .color-preview {
@@ -8,18 +18,43 @@ body {
 	margin-bottom: 20px;
 }
 
-.color-preview div {
-	width: 20px;
-	height: 20px;
+.color-box {
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
+	margin: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#primary {
+	background-color: #004cff;
+}
+
+#secondary {
+	background-color: #ff69b4;
+}
+
+#accent {
+	background-color: #33cc33;
+}
+
+#background {
+	background-color: #cccccc;
+}
+
+#text {
+	background-color: #666666;
 }
 
 .css-code {
 	margin-top: 20px;
-}
-
-.css-code pre {
 	background-color: #f7f7f7;
 	padding: 10px;
 	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.css-code pre {
+	font-size: 16px;
+	font-family: monospace;
 }
