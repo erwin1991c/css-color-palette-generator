@@ -1,0 +1,32 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
+
+.generator {
+	max-width: 400px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.color-preview {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.color-preview div {
+	width: 20%;
+	height: 50px;
+	border: 1px solid #ddd;
+}
+
+.css-code {
+	margin-top: 20px;
+	background-color: #f9f9f9;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
