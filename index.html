@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Color Palette Generator</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>CSS Color Palette Generator</h1>
+	<div class="generator">
+		<label for="base-color">Select Base Color:</label>
+		<input type="color" id="base-color" value="#ff0000">
+		<div class="color-preview">
+			<div class="primary" style="background-color: #ff0000;"></div>
+			<div class="secondary" style="background-color: #ffffff;"></div>
+			<div class="accent" style="background-color: #000000;"></div>
+			<div class="background" style="background-color: #f9f9f9;"></div>
+			<div class="text" style="background-color: #333333;"></div>
+		</div>
+		<div class="css-code">
+			<pre><code>/* CSS Code will be generated here */</code></pre>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
