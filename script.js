@@ -58,7 +58,7 @@ function getTextColor(baseColor) {
 }
 
 function rgbToHsl(rgb) {
-	const [r, g, b] = rgb.match(/\d+/g).map((x) => parseInt(x, 10));
+	const [r, g, b] = rgb.substring(4, rgb.length - 1).split(',').map((x) => parseInt(x, 10));
 	const max = Math.max(r, g, b);
 	const min = Math.min(r, g, b);
 	const l = (max + min) / 2;
